@@ -1,108 +1,168 @@
-:root {
-    --primary-color: #2c3e50;
-    --secondary-color: #ecf0f1;
-    --highlight-color: #e74c3c;
-    --font-family: 'Arial, sans-serif';
-}
-
-* {
-    box-sizing: border-box;
+/* Syling the Body */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    color: #fff;
+    background-color: #f4f4f4;
 }
 
-body {
-    font-family: var(--font-family);
-    line-height: 1.6;
-    color: var(--primary-color);
-    background-color: var(--secondary-color);
+/* Container setup */
+.container {
+    width: 80%;
+    margin: 0 auto;
 }
 
+/* Header styling */
 header {
-    background: var(--primary-color);
-    color: var(--secondary-color);
-    padding: 1rem;
+    background-color: crimson;
+    color: white;
+    padding: 20px 0;
 }
 
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-}
-
-nav ul li {
-    margin: 0 1rem;
-}
-
-nav ul li a {
-    color: var(--secondary-color);
-    text-decoration: none;
-}
-
-main {
-    padding: 2rem;
-}
-
-#about {
+header h1 {
+    margin: 0;
     text-align: center;
 }
 
-#about img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin: 1rem 0;
-}
-
-.gallery {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.gallery a {
-    width: 30%;
-    margin: 1rem 0;
+header nav ul {
+    list-style-type: none;
+    padding: 0;
     text-align: center;
-    color: var(--primary-color);
-    text-decoration: none;
+    margin-top: 10px;
 }
 
-.gallery a img {
+header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: red;
+    border-radius: 5px;
+}
+
+/* Hero section styling */
+#hero {
+    background-color: crimson;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+#hero h2 {
+    font-size: 100px;
+    margin-bottom: 10px;
+}
+
+#hero p {
+    font-size: 50px;
+}
+
+/* Section styling */
+.content-section {
+    padding: 50px 0;
+    background-color: crimson;
+    margin-bottom: 20px;
+}
+
+.content-section h2 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.content-section p {
+    font-size: 25px;
+    line-height: 1;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+}
+
+/* Work section */
+.work-item {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.work-item img {
     width: 100%;
-    border-radius: 8px;
-    transition: transform 0.2s;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 1;
 }
 
-.gallery a:hover img {
-    transform: scale(1.05);
+.work-item img:hover {
+    transform: scale(1);
 }
 
-.featured img {
-    border: 2px solid var(--highlight-color);
+.work-item h3 {
+    margin-top: 10px;
+    font-size: 50px;
+    color: white;
 }
 
-footer {
+/* Contact section */
+#contact p {
+    font-size: 50px;
     text-align: center;
-    padding: 1rem;
-    background: var(--primary-color);
-    color: var(--secondary-color);
+    color: white;
 }
 
-@media (max-width: 768px) {
-    .gallery a {
-        width: 48%;
-    }
+#contact a {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-@media (max-width: 480px) {
-    .gallery a {
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styling */
+footer {
+    background-color: crimson;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive styling */
+@media (max-width: 750px) {
+    .container {
         width: 100%;
+        padding: 0 20px;
     }
-    nav ul {
-        flex-direction: column;
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
     }
-    nav ul li {
-        margin: 0.5rem 0;
+
+    #hero h2 {
+        font-size: 50px;
+    }
+
+    #hero p {
+        font-size: 50px;
+    }
+
+    .work-item img {
+        max-width: 100%;
     }
 }

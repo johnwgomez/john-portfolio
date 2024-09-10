@@ -1,52 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>John Gomez's Portfolio</title>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
+
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>John Gomez Coding Portfolio </h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-        <section id="about">
-            <h1>John Doe</h1>
-            <img src="avatar.jpg" alt="John Doe's photo">
-            <p>Welcome to my portfolio. Here you can find samples of my work and get to know more about me.</p>
-        </section>
-        <section id="work">
-            <h2>My Work</h2>
-            <div class="gallery">
-                <a href="https://linktofirstproject.com" class="featured">
-                    <img src="project1.jpg" alt="Project 1">
-                    <p>Project 1</p>
-                </a>
-                <a href="https://linktosecondproject.com">
-                    <img src="project2.jpg" alt="Project 2">
-                    <p>Project 2</p>
-                </a>
-                <a href="https://linktothirdproject.com">
-                    <img src="project3.jpg" alt="Project 3">
-                    <p>Project 3</p>
+
+    <section id="hero">
+        <div class="container">
+            <h2>Welcome to my Profile</h2>
+            <p>Here is my work and get to know ME!</p>
+        </div>
+    </section>
+
+    <section id="about" class="content-section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>A creative, dynamic Marketing Professional highly regarded for demonstrated success in developing and
+                deploying strategic marketing plans, designing innovative digital/online campaigns, and cultivating
+                relationships with the community for key industry leaders. Promoted to positions of increasing authority
+                and responsibility due to exceptional marketing strategy development, team leadership abilities, and
+                overall high-quality performance. Adept at performing market research and analysis to proactively
+                identify trends and capitalize on advantageous business opportunities to drive company growth and
+                revenue. Exceptional relationship-building skills with the capability to establish and maintain
+                relationships through diplomatic communication and negotiations. Successfully manage projects,
+                promotional initiatives and events while ensuring clients’ needs are exceeded.I look forward to meeting
+                you! </p>
+        </div>
+    </section>
+
+    <section id="work" class="content-section">
+        <div class="container">
+            <h2>Work</h2>
+            <div class="work-item">
+                <a href="https://example.com/project1">
+                    <img src="images/project1.jpg" alt="Project 1">
+                    <h3>Project 1</h3>
                 </a>
             </div>
-        </section>
-        <section id="contact">
+
+            <div class="work-item">
+                <a href="https://example.com/project1">
+                    <img src="images/project1.jpg" alt="Project 2">
+                    <h3>Project 2</h3>
+                </a>
+            </div>
+
+            <div class="work-item">
+                <a href="https://example.com/project1">
+                    <img src="images/project1.jpg" alt="Project 3">
+                    <h3>Project 3</h3>
+                </a>
+            </div>
+
+            <div class="work-item">
+                <a href="https://example.com/project1">
+                    <img src="images/project1.jpg" alt="Project 4">
+                    <h3>Project 4</h3>
+                </a>
+            </div>
+            <!-- NOTE FOR JOHN GOMEZ ^COPY ABOVE SECTION TO ADD MORE -->
+        </div>
+    </section>
+
+    <section id="contact" class="content-section">
+        <div class="container">
             <h2>Contact Me</h2>
-            <p>Email: johndoe@example.com</p>
-            <p>Phone: (123) 456-7890</p>
-        </section>
-    </main>
+            <p>Email: john@gomez.com</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/johnguevaragomez/">CLICK HERE</a></p>
+        </div>
+    </section>
+    <section id="resume" class="content-section">
+        <div class="container">
+            <h2>Resume</h2>
+            <p>Resume: <a href="">CLICK HERE</a></p>
+        </div>
+    </section>
     <footer>
-        <p>&copy; 2024 John Doe</p>
+        <div class="container">
+            <p></p>
+        </div>
     </footer>
 </body>
+
 </html>
